@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Munder Difflin Paper</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<link href="<%= url('/css/style.css') %>" rel="stylesheet" type="text/css" />
+    
+</head>
+
+<body>	
+	
+						<!-- Top Header -->
+	<div class="top_header">
+		<div class="col-3">FREE GROUND SHIPPING AND RETURNS ON ALL ORDERS</div>
+		<div class="user-info">LOGIN OR SIGN UP</div>
+		<div class="mini-cart">
+			<div class="cart">
+				<i class="icon-cart"></i>
+				<span>My Cart</span>
+			</div>
+		<div class="total-quantity">0</div>
+		</div>
+	</div>			
+						
+	
+	<header>	
+		
+		<div class="container">
+			<nav>
+			<div class="nav-wrapper ">
+			<a href="/" class="brand-logo "><img src="<%= url('/images/logo.png')%>"></a>
+			<a href="#" data-target="slide-out" class="sidenav-trigger "><i class="material-icons">menu</i></a>
+			<div class="menu">
+				<ul class="right hide-on-med-and-down">
+					<li><a href="/about-us">About</a>
+						<ul class="submenu">
+							<li><a href="/staff">Staff</a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="/products">Products</a></li>
+					<li><a href="/custom">Custom</a></li>
+					<li><a href="/contact">Contacts</a></li>
+				</ul>
+			   </div>
+                    
+							<div class="header-search" >
+							<form>
+                              <div class="input-field ">
+                                <i class=" material-icons prefix">search</i>
+                                <input type="text" placeholder="search" id="q " >
+								</div>
+								</form>
+                              </div>
+                                     
+                        
+			</div>
+			</nav>
+			
+			<ul id="slide-out" class="sidenav" >
+			<li><a href="/about-us">About</a>
+                    <ul class="submenu">
+                <li><a href="/staff">Staff</a>
+                </li>
+                </ul>
+                    </li>
+					<li><a href="/products">Products</a></li>
+					<li><a href="/custom">Custom</a></li>
+					<li><a href="/contact">Contacts</a></li>
+					<li>    
+                       <div class="center row">
+                          <div class="col s12 " >
+                            <div class="row" id="topbarsearch">
+                              <div class="input-field col s6 s12 ">
+                                <i class=" material-icons prefix">search</i>
+                                <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete " >
+                                </div>
+                              </div>
+                            </div>
+                          </div>          
+                      </li>      
+			</ul>
+			<div class="mobile-header">
+				<div class="mini-cart">
+					<div class="cart">
+						<i class="icon-cart"></i>
+						<span>My Cart</span>
+					</div>
+					<div class="total-quantity">0</div>
+				
+				</div>
+		</div>
+		
+    </header>
+
+	<div class="main">
+    <%= yield %>
+	</div> <!--  	main	 -->
+    <footer>
+		<div class="container">
+			<div class="footer-container">
+				<div class="footer-links">
+					<div  class="footer-item">
+						<div class="content-slot">
+						<h3>Company</h3>
+							<ul class="menu-footer">
+						    <li><a href="#">About Us</a></li>
+						    <li><a href="#">Work Here</a></li>
+						    <li><a href="#">Team</a></li>
+						    <li><a href="#">Happenings</a></li>
+						    <li><a href="#">Store/Dealer Locator</a></li>
+							</ul><!-- END: footer-company -->
+						</div>
+				</div>
+				<div class="footer-item">
+					<div class="content-slot">
+						<h3>Customer Support</h3>
+							<ul >
+						    <li><a href="#">Need a Repair</a></li>
+						    <li><a href="#">Warranty</a></li>
+						    <li><a href="#" title="FAQs">FAQs</a></li>
+						    <li><a href="#" title="Contact Us">Contact Us</a></li>
+						</ul><!-- END: footer-service -->
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="content-slot">
+						<h3>Orders &amp; Returns</h3>
+						<ul >
+						    <li><a href="#">Order Status</a></li>
+						    <li><a href="#">Shipping Policy</a></li>
+						    <li><a href="#">Return Policy</a></li>
+						    <li><a href="#">Promotions</a></li>
+						</ul><!-- END: footer-orders-returns -->
+					</div>
+				</div>
+				<div class="footer-item">
+					<div class="content-slot">
+						<h3>Legal</h3>
+						<ul >
+						    <li><a href="#">Privacy Policy</a></li>
+						    <li><a href="#">Terms and Conditions</a></li>
+						    <li><a href="#">Social Responsibility</a></li>
+						</ul><!-- END: footer-legal -->
+					</div>
+				</div>
+				</div>
+				<div class="footer-social social-icon-list">
+					<ul class="list-inline">
+						<li>
+							<a class="icon-instagram" alt="instagram" title="instagram" href="#" target="_blank"></a>
+						</li>
+						<li>
+							<a class="icon-pinterest" alt="pinterest" title="pinterest" href="#" target="_blank"></a>
+						</li>
+						<li>
+							<a class="icon-facebook" alt="facebook" title="facebook" href="#" target="_blank"></a>
+						</li>
+						<li>
+							<a class="icon-twitter" alt="twitter" title="twitter" href="#" target="_blank"></a>
+						</li>
+					</ul>
+			</div>
+	</div>
+				
+			<p class="copyright">© 2018 Munder Difflin. All Rights Reserved.</p>
+	</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="<%= url('/main.js') %>"></script>
+</body>
+
+</html>
