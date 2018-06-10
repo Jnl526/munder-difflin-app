@@ -18,10 +18,10 @@ class Staff
         puts @staff.keys
     end
     def return_bio(bio)
-        puts @define[bio.to_sym]
+        puts @staff[bio.to_sym]
     end
 
     def return_image(image)
-        puts @define[image.to_sym]
+        puts @staff[image.to_sym]
     end
 end
